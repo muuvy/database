@@ -27,3 +27,17 @@ Browse Db with Mongo Explorer
 Filter movie: {title:'Avengers: Endgame'}
 
 - About
+
+## Prerequisites
+__Docker Setup on OSX__  
+```bash
+brew cask install docker docker-compose
+```
+
+__Docker Setup on Windows__  
+Can someone document this?
+
+## Run
+```bash
+docker-compose up
+```
