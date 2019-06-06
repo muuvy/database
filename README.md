@@ -5,8 +5,9 @@
 - Introduction
 - Architecture
 - Setup
+- About
 
-install docker https://hub.docker.com/ (docker for desktop / create account)
+## Setup
 
 shell: docker container run -p 28000:27017 --name mongoDbExample --detach mongo:latest
 
@@ -26,16 +27,17 @@ Browse Db with Mongo Explorer
 
 Filter movie: {title:'Avengers: Endgame'}
 
-- About
-
-## Prerequisites
+### Prerequisites
 __Docker Setup on OSX__  
 ```bash
 brew cask install docker docker-compose
 ```
 
 __Docker Setup on Windows__  
-Can someone document this?
+
+[Install Docker](https://docs.docker.com/v17.09/docker-for-windows/install/#download-docker-for-windows) 
+
+_Docker for windows contains Docker, Docker CLI client and Docker Compose_
 
 ## Run
 ```bash
