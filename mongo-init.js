@@ -1,15 +1,14 @@
-db.createUser(
-    {
-        user: "muuvy",
-        pwd: "muuvy",
-        roles: [
-            {
-                role: "readWrite",
-                db: "muuvy"
-            }
-        ]
-    }
-);
+db.createUser({
+    user: "muuvy",
+    pwd: "muuvy",
+    mechanism: "SCRAM-SHA-1",
+    roles: [{
+            role: "readWrite",
+            db: "muuvy"
+        },
+        "dbAdmin"
+    ]
+});
 
 db = db.getSiblingDB('muuvy');
 
