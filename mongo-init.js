@@ -1,10 +1,12 @@
+db.auth('root', 'root')
+
+db = db.getSiblingDB('muuvy')
+
 db.createUser({
-    user: "muuvy",
-    pwd: "muuvy",
+    user: 'muuvy',
+    pwd: 'muuvy',
     roles: [{
-            role: "readWrite",
-            db: "muuvy"
-        },
-        "dbAdmin"
-    ]
+        role: 'root',
+        db: 'admin',
+    }, ],
 });
